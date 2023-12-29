@@ -1,0 +1,32 @@
+---
+import ConovelCard from "../components/cards/ConovelCard.astro";
+import EncCard from "../components/cards/EncCard.astro";
+import FocusprojCard from "../components/cards/FocusprojCard.astro";
+import Layout from "../layouts/Layout.astro";
+import EmailContactLabel from "../components/contact/EmailContactLabel.astro";
+import GithubContactLabel from "../components/contact/GithubContactLabel.astro";
+---
+
+<Layout title="sheason.site - Sheason 的个人小站">
+  <header class="p-4 sticky top-0 font-mono bg-slate-700 text-white z-10">
+    <h1 class="text-xl font-bold">Sheason 的个人小站</h1>
+  </header>
+  <main class="container mx-auto flex-1 px-4">
+    <h1 class="font-mono text-3xl my-4 font-bold">Project</h1>
+    <div class="grid grid-cols-1 md:grid-cols-3">
+      <EncCard />
+      <FocusprojCard />
+      <ConovelCard />
+    </div>
+    <h1 class="font-mono text-3xl my-4 font-bold">联系方式</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2">
+      <EmailContactLabel />
+      <GithubContactLabel />
+    </div>
+  </main>
+  <footer class="py-6 bg-slate-700 text-white flex justify-center mt-8">
+    <div>备案号 - TODO</div>
+  </footer>
+</Layout>
+
+<style></style>
